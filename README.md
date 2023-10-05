@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Movie Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Movie Search App, known as **kinoLab**, is a web application that allows users to search for movies and view detailed information about them. It provides access to a vast database of movies and enables users to keep track of movies they've watched and rate them.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Movie Search**: Easily search for movies by typing in keywords in the search bar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Movie Details**: Click on a movie from the search results to view detailed information about it, including its title, release date, genre, IMDb rating, and more.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Add to Watched List**: Rate and add movies you've watched to your personal "Watched" list. You can also delete movies from this list.
 
-### `npm test`
+- **Average Ratings**: Get statistics on the movies you've watched, including the average IMDb and user ratings, as well as the average runtime.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React**: The app is built using React, a popular JavaScript library for building user interfaces.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **OMDb API**: The app fetches movie data from the OMDb API, which provides comprehensive information about movies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **LocalStorage**: The app uses browser local storage to persist the "Watched" list, ensuring that your watched movies are saved even after closing the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Custom Hooks**: Custom hooks like `useMovies`, `useLocalStorageState`, and `useKey` are used to manage specific functionalities efficiently.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Enter keywords in the search bar to search for movies.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Click on a movie from the search results to view its details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Rate and add movies you've watched to the "Watched" list.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Delete movies from the "Watched" list by clicking the delete button.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- View average ratings and statistics about your watched movies in the "Watched Summary" section.
